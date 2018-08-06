@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+<link
+rel="stylesheet" href="this.css">
 
 
 
 
 
 </head>
-<body>
+<body class= "text">
 <p id="waist">
   </p>
 <p id="hips">
@@ -17,7 +19,7 @@
 </p>
 
 
-  <script>
+  <script >
     var waistsize= prompt ("input waist measurement");
     var hipsize= prompt ("input hip measurement");
 
@@ -29,7 +31,7 @@ var waist = {"23" : ["Gap: 3XS and 0000", "American Eagle: XXS and 00", "Hollist
  var waiststores = JSON.parse(waist);
  var hipstores = JSON.parse(hips);
 
-if(waistsize < 23 && hipsize <32) {document.getElementById("other").innerHTML= "NO RESULTS FOUND. MAKE SURE YOUR MEASUREMENTS ARE CORRECT!";}
+if(waistsize < 23 == hipsize <32) {document.getElementById("other").innerHTML= "NO RESULTS FOUND. MAKE SURE YOUR MEASUREMENTS ARE CORRECT!";}
 
  var wstores= waiststores[waistsize];
  var wtext = "";
@@ -42,8 +44,8 @@ if(waistsize < 23 && hipsize <32) {document.getElementById("other").innerHTML= "
    htext= htext + "<br>" + hstores[i];
  }
 
-document.getElementById("waist").innerHTML="stores for your waist size: " + wtext + ".";
-document.getElementById("hips").innerHTML = "stores for your hip size: " + htext + ".";
+document.getElementById("waist").innerHTML="Stores For Your Waist Size: " + wtext + ".";
+document.getElementById("hips").innerHTML = "Stores For Your Hip Size: " + htext + ".";
 
 </script>
 
